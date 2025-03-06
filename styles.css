@@ -22,7 +22,7 @@ Version: v1.0
     --secondary-color: hsl(0, 0%, 41%);
     --accent-color: #28a745; /* Example: Green */
     --background-color: #f8f9fa; /* Light Gray */
-    --text-color: #333; /* Dark Gray */
+    --text-color: #000; /* Black */
     --light-text-color: #666;
     --white: #fff;
     --black: #000;
@@ -60,7 +60,7 @@ body {
   }
 
   .container {
-    width: 90%; /* Adjust as needed */
+    width: 88%; /* Adjust as needed */
     max-width: 1200px; /* Adjust as needed */
     margin: 0 auto;
   }
@@ -73,13 +73,15 @@ h5,
 h6 {
   font-family: var(--heading-font-family);
   color: var(--text-color);
+  font-weight: 200;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 /* Header Styles  */
 header {
   background-image: url(./images/desktop/image-hero.jpg);
-  background-color: #cccccc;
+  background-color: var(--background-color);
   height: 650px;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,17 +90,13 @@ header {
   filter: brightness(0.75);
 }
 
-.hero {
-  margin: var(--space-lg) var(--space-xl);
-}
-
 .page-title {
   padding: var(--space-md) var(--space-lg);
   color: var(--white);
   text-transform: uppercase;
   border: 1px solid var(--white);
   width: 40%;
-  font-weight: 200;
+  margin: 1.5rem;
   font-size: 3rem;
 }
 
@@ -108,7 +106,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-xl) var(--space-lg);
   
 }
 
@@ -124,6 +122,68 @@ nav {
 }
 
 /* Styles for Main Content */
+.about {
+  display: inline-flex;
+  padding: var(--space-xl);
+  margin: var(--space-lg);
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+.about-text {
+  
+}
+
+.creations-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.section-button {
+  text-transform: uppercase;
+  padding: var(--space-sm) var(--space-lg);
+  letter-spacing: 3px;
+  border: 1.5px solid var(--black);
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+.section-button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.creations-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.creations-gallery-item {
+    position: relative;
+    text-align: left;
+}
+
+.creations-gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.creations-gallery-item h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 90%;
+  color: var(--white);
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 0;
+}
+
+
 
 /* Footer Styles */
 .attribution { font-size: 11px; text-align: center; }
@@ -140,5 +200,17 @@ nav {
    .topnav .menu-item {
     display: none;
    }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .page-title {
+    width: 100%;
+    margin: 0;
+  }
   }
 
