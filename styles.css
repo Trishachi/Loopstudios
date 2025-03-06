@@ -78,6 +78,17 @@ h6 {
   text-transform: uppercase;
 }
 
+/* Remove list styles on ul, ol elements which suggests default styling will be removed. */
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header Styles  */
 header {
   background-image: url(./images/desktop/image-hero.jpg);
@@ -160,6 +171,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
 }
 
 .creations-gallery-item {
@@ -186,6 +199,29 @@ nav {
 
 
 /* Footer Styles */
+.footer {
+  background-color: var(--black);
+  padding: var(--space-xl) 0;
+  color: var(--white);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+}
+
+.socials, 
+.footer-menu {
+  display: flex;
+}
+
+.social-item, 
+.footer-menu-item {
+  padding: 0 var(--space-sm);
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
