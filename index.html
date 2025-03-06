@@ -5,16 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="./script.js"></script>  
 </head>
 <body>
+  <div class="wrapper">
+    <header class="header">
+      <nav id="topnav" class="topnav">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Brand Logo">
+        </div>
+        <div class="menu">
+          <a href="#" class="menu-item">About</a>
+          <a href="#" class="menu-item">Careers</a>
+          <a href="#" class="menu-item">Events</a>
+          <a href="#" class="menu-item">Products</a>
+          <a href="#" class="menu-item">Support</a>
+          <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <img src="./images/icon-hamburger.svg" alt="menu icon">
+          </a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1 class="page-title">Immersive experiences that deliver</h1>
+      </div>
+    </header>
+    <main role="main"></main>
+    <footer></footer>
+  </div>
  
 
   <div class="attribution">

@@ -1,0 +1,144 @@
+/*  
+Styles for: Loopstudios Front-End Developer Challenge
+Author: Chisom Okoye
+Date: 03/03/2025
+Version: v1.0
+*/
+
+/* Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Variables */
+:root {
+    /* Color Palette */
+    --primary-color: hsl(0, 0%, 55%);
+    --secondary-color: hsl(0, 0%, 41%);
+    --accent-color: #28a745; /* Example: Green */
+    --background-color: #f8f9fa; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --light-text-color: #666;
+    --white: #fff;
+    --black: #000;
+    --border-color: #dee2e6;
+  
+    /* Typography */
+    --base-font-family: "Alata", sans-serif;
+    --heading-font-family: "Josefin Sans", sans-serif;
+    --base-font-size: 15px;
+    --base-line-height: 1.5;
+  
+    /* Spacing */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+  
+    /* Border Radius */
+    --border-radius: 0.25rem;
+  
+    /* Breakpoints */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+  }
+
+/* Global Styles */
+body {
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  .container {
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+/* Header Styles  */
+header {
+  background-image: url(./images/desktop/image-hero.jpg);
+  background-color: #cccccc;
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* make background image appear darker */
+  filter: brightness(0.75);
+}
+
+.hero {
+  margin: var(--space-lg) var(--space-xl);
+}
+
+.page-title {
+  padding: var(--space-md) var(--space-lg);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 1px solid var(--white);
+  width: 40%;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-lg) var(--space-xl);
+  
+}
+
+.menu a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Styles for Main Content */
+
+/* Footer Styles */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Responsive Styles */
+/* For small screens  */
+@media only screen and (max-width: 768px) {
+   .topnav .icon {
+    float: right;
+    display: block;
+   }
+
+   .topnav .menu-item {
+    display: none;
+   }
+  }
+
