@@ -52,6 +52,7 @@ Version: v1.0
 
 /* Global Styles */
 body {
+    min-height: 100vh;
     font-family: var(--base-font-family);
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
@@ -116,26 +117,86 @@ header {
 /* Navigation Styles */
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: var(--space-xl) var(--space-lg);
   
 }
 
-.menu a {
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
   color: var(--white);
   text-decoration: none;
-  padding: var(--space-sm);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-sm);
   margin: 0 var(--space-sm);
   font-weight: bold;
 }
 
-.menu a:hover {  
+/* .menu a:hover {  
   border-bottom: 2px solid var(--white);
   transition: 0.3s;
+} */
+
+/* .topnav .icon {
+  display: none;
+} */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  z-index: 999;
+  background-color: var(--black);
+  color: var(--white);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
 }
 
-.topnav .icon {
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  /* width: 100%; */
+  font-family: var(--heading-font-family);
+  color: var(--white);
+  font-size: x-large;
+  font-weight: 200;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.menu-button {
   display: none;
+}
+
+.mobile-menu-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+  padding: 50px 25px;
+}
+
+img.mobile-logo {
+  height: 30px;
 }
 
 /* Styles for Main Content */
@@ -284,7 +345,14 @@ nav {
 
 /* Mobile view */
 @media only screen and (max-width: 768px) {
-   .topnav .icon {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+   /* .topnav .icon {
     float: right;
     display: block;
    }
@@ -298,13 +366,17 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
 
   .page-title {
     width: 100%;
     margin: 0;
   }
+}
 
- 
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
 }
 

@@ -20,16 +20,27 @@
         <div class="logo">
           <img src="./images/logo.svg" alt="Brand Logo">
         </div>
-        <div class="menu">
-          <a href="#" class="menu-item">About</a>
-          <a href="#" class="menu-item">Careers</a>
-          <a href="#" class="menu-item">Events</a>
-          <a href="#" class="menu-item">Products</a>
-          <a href="#" class="menu-item">Support</a>
-          <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
-            <img src="./images/icon-hamburger.svg" alt="menu icon">
-          </a>
-        </div>
+        <ul class="sidebar">
+          <li class="mobile-menu-close" onclick=hideSidebar()>
+            <img class="mobile-logo" src="./images/logo.svg" alt="Mobile Menu Logo">
+            <a href="#" class="close-icon"><img src="./images/icon-close.svg" alt="Close icon"></a>
+          </li>
+          <li><a href="#" class="menu-item">About</a></li>
+          <li><a href="#" class="menu-item">Careers</a></li>
+          <li><a href="#" class="menu-item">Events</a></li>
+          <li><a href="#" class="menu-item">Products</a></li>
+          <li><a href="#" class="menu-item">Support</a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="#" class="hideOnMobile menu-item">About</a></li>
+          <li><a href="#" class="hideOnMobile menu-item">Careers</a></li>
+          <li><a href="#" class="hideOnMobile menu-item">Events</a></li>
+          <li><a href="#" class="hideOnMobile menu-item">Products</a></li>
+          <li><a href="#" class="hideOnMobile menu-item">Support</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#" class="icon"><img src="./images/icon-hamburger.svg" alt="menu icon">
+          </a></li>
+        </ul>
+      
       </nav>
       <div class="hero container">
         <h1 class="page-title">Immersive experiences that deliver</h1>
