@@ -200,7 +200,7 @@ img.mobile-logo {
 .about {
   display: flex;
   padding: var(--space-xl);
-  margin: var(--space-lg);
+  /* margin: var(--space-lg); */
   position: relative;
  
 }
@@ -221,7 +221,7 @@ img.mobile-logo {
   text-align: left;
   position: absolute;
   left: 520px;
-  top: 220px;
+  top: 270px;
   
 }
 
@@ -427,6 +427,7 @@ section.creations {
 }
 
 /* Responsive Styles for Gallery Button */
+/* for screens bigger than 600px - Tablet and Desktop */
 @media only screen and (min-width: 600px) {
   .gallery-button-mobile {
     display: none;
@@ -442,7 +443,7 @@ section.creations {
     margin-bottom: 0;
   }
 }
-
+/* For screens smaller than 600px - Mobile screens */
 @media only screen and (max-width: 600px) {
   .gallery-button-desktop {
     display: none;
