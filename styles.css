@@ -145,15 +145,6 @@ nav a {
   font-weight: bold;
 }
 
-/* .menu a:hover {  
-  border-bottom: 2px solid var(--white);
-  transition: 0.3s;
-} */
-
-/* .topnav .icon {
-  display: none;
-} */
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -174,7 +165,6 @@ nav a {
 }
 
 .sidebar a {
-  /* width: 100%; */
   font-family: var(--heading-font-family);
   color: var(--white);
   font-size: x-large;
@@ -320,9 +310,6 @@ img.mobile-logo {
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 /* Responsive Styles - For smaller screens  */
 /* Tablet View */
 @media only screen and (max-width: 980px) {
@@ -352,21 +339,7 @@ img.mobile-logo {
   .menu-button {
     display: block;
   }
-   /* .topnav .icon {
-    float: right;
-    display: block;
-   }
 
-   .topnav .menu-item {
-    display: none;
-   }
-
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
 
   .page-title {
     width: 100%;
