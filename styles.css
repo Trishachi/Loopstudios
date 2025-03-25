@@ -105,8 +105,6 @@ header {
 .hero {
   max-width: 65%;
   display: flex;
-  /* justify-content: flex-start; */
-  /* margin: 0 5rem; */
 }
 
 .page-title {
@@ -118,8 +116,6 @@ header {
   margin: 3rem 0;
   font-size: 3rem;
 }
-
-
 
 /* Navigation Styles */
 nav {
@@ -137,9 +133,9 @@ nav ul {
   align-items: center;
 }
 
-nav li {
+/* nav li {
   height: 50px;
-}
+} */
 
 nav a {
   height: 100%;
@@ -150,7 +146,21 @@ nav a {
   padding: 0 var(--space-sm);
   margin: 0 var(--space-sm);
   font-weight: bold;
+  position: relative;
 }
+
+nav a:hover::after {
+  content: ' ';
+  background-color: var(--white);
+  height: 2px;
+  width: 25px;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
 
 .sidebar {
   position: fixed;
@@ -257,6 +267,7 @@ section.creations {
   background-color: var(--white);
   transition: 0.3s;
   width: 180px;
+  cursor: pointer;
 }
 
 .section-button:hover {
@@ -285,8 +296,6 @@ section.creations {
 
 .creations-gallery-item:hover img {
   opacity: 0.6;
-  
-  
 }
 
 .creations-gallery-item:hover h3 {
@@ -313,6 +322,7 @@ section.creations {
   background-color: var(--black);
   padding: var(--space-xl) 0;
   color: var(--white);
+  position: relative;
 }
 
 .footer-section {
@@ -321,6 +331,25 @@ section.creations {
   align-items: center;
   padding: var(--space-md) 0;
 }
+
+ul.footer-menu a,
+ul.socials a {
+  position: relative;
+}
+
+ul.footer-menu a:hover::after,
+ul.socials a:hover::after {
+  content: ' ';
+  background-color: var(--white);
+  height: 2px;
+  width: 25px;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
 
 .footer-menu-item {
   padding: var(--space-sm) 0;
